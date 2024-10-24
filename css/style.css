@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+  }
+  
+  body{
+    background: white;
+  }
+  
+  main{
+    width: 100%;
+    height:100%;
+  }
+
+#sketch-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #gui-container {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 100;
+    width: 330px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: rgb(255,255,255,0.7);
+  }
+  
+  .button {
+    background-color: #ff0000;
+    border: solid 1px #371bd3;
+    /* border-radius: 10px; */
+    margin-right: 5px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    min-width: 150px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color:white;
+    color: #371bd3;
+  }
+
+  .button.inactive{
+    cursor:default;
+    background-color: lightgray;
+    border-color: lightgray;
+    color: white;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+  
+    opacity: 1;
+    /* -webkit-transition: .2s;
+    transition: opacity .2s; */
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    background: rgb(254, 0, 0);
+    cursor: pointer;
+    
+  }
